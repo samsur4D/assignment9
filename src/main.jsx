@@ -15,6 +15,9 @@ import Details from './Pages/Details.jsx';
 import Protectroute from './Components/Protectroute.jsx';
 import Contactus from './Pages/Contactus.jsx';
 import NotFound from './Components/NotFound.jsx';
+import Userpro from './Pages/Userpro.jsx';
+import Updatepro from './Pages/Updatepro.jsx';
+import Reviews from './Pages/Reviews.jsx';
 
 const router = createBrowserRouter([
   {
@@ -39,9 +42,22 @@ const router = createBrowserRouter([
           element: <Register></Register>
         },
         {
+          path: "/userpro",
+          element: <Userpro></Userpro>
+        },
+        {
+          path: "/updaterpro",
+          element: <Updatepro></Updatepro>,
+        },
+        {
+          path: "/reviews",
+          element: <Reviews></Reviews>,
+        },
+        {
           path:"/details/:id",
           element: <Protectroute>  <Details></Details>  </Protectroute>
-        }
+        },
+        
     ]
   },
 ]);

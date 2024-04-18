@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react';
 import { AuthContext } from '../Components/AuthProvider';
 
 const Register = () => {
-    const {registerUser , setUser} = useContext(AuthContext)
+    const {registerUser , setUser , updateUserProfile} = useContext(AuthContext)
     const [error , setError] = useState("")
     const [emailError , setEmailError] = useState("")
     
@@ -59,7 +59,7 @@ const handleRegister = (e) =>{
 
     return (
         
-        <div className="mt-32 w-[40%] mx-auto min-w[500px] border-2 border-black p-3 rounded-xl">
+        <div className="mt-32 mb-80 w-[40%] mx-auto min-w[500px] border-2 border-black p-3 rounded-xl">
                    <h3 className='text-7xl font-bold text-center mb-5'>Please Register</h3>
         <form onSubmit={handleRegister} >
             
@@ -75,7 +75,7 @@ const handleRegister = (e) =>{
             <input name="photo" type='url' placeholder="give your photo"
             className="input input-bordered w-full " />
         </div>
-        {/* --------- */}
+        {/* --------- */} 
         <div className='mb-12'>
             <p>Email</p>
             <input name="email" type="text" placeholder="Type here your email"

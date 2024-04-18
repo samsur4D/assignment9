@@ -1,8 +1,13 @@
 import React from 'react';
 import Marquee from "react-fast-marquee";
 import { LuFacebook } from "react-icons/lu";
+import Leflet from '../Components/Leflet';
+// import { MapContainer } from 'https://cdn.esm.sh/react-leaflet/MapContainer'
+// import { TileLayer , Marker , Popup } from 'https://cdn.esm.sh/react-leaflet/TileLayer'
 
 const Contactus = () => {
+  const center = [51.505, -0.09]; // Coordinates for London
+  const zoom = 13;
     return (
         
         <div className=''>
@@ -11,7 +16,7 @@ const Contactus = () => {
      Contact With Us In Our facebook Page<LuFacebook  className=' bg-blue-600  px-2 rounded-full mr-2 ml-2  text-6xl'/> our Page link is <span className='bg-blue-200 hover:bg-blue-500 text-6xl'>"https://www.guest-webster.com/heritance/links"</span>
              </Marquee>
             </div>
-                <div className="grid max-w-screen-xl grid-cols-1 gap-8 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 dark:bg-gray-100 dark:text-gray-800">
+                <div className="grid max-w-screen-xl mt-36 mb-36 grid-cols-1 gap-8 px-8 py-16 mx-auto rounded-lg md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 dark:bg-gray-100 dark:text-gray-800">
 	<div className="flex flex-col justify-between">
 		<div className="space-y-2">
 			<h2 className="text-4xl font-bold leading-tight lg:text-5xl">Let's talk!</h2>
@@ -35,18 +40,20 @@ const Contactus = () => {
 		<button type="submit" className="w-full bg-blue-200 hover:bg-blue-500 p-3 text-sm font-bold tracking-wide uppercase rounded dark:bg-violet-600 dark:text-gray-50">Send Message</button>
 	</form>
 </div>
-   <Marquee className='' speed={300}>
+   <Marquee className='mb-36' speed={300}>
     <div className='flex gap-2'>
     <img  className='w-[200px] h-[150px]' src="https://images.unsplash.com/photo-1529316275402-0462fcc4abd6?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
 
 <img  className='w-[200px] h-[150px]' src="https://images.unsplash.com/photo-1669694575282-03ed7faf6360?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
 
 <img  className='w-[200px] h-[150px]' src="https://images.unsplash.com/photo-1569369926169-9ee7fb80adeb?q=80&w=2063&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+<img  className='w-[200px] h-[150px]' src="https://images.unsplash.com/photo-1569369926169-9ee7fb80adeb?q=80&w=2063&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
 
 <img  className='w-[200px] h-[150px]' src="https://images.unsplash.com/photo-1545403842-6b8149e2759e?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
 
 <img  className='w-[200px] h-[150px]' src="https://images.unsplash.com/photo-1529316275402-0462fcc4abd6?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
 
+<img  className='w-[200px] h-[150px]' src="https://images.unsplash.com/photo-1567636788276-40a47795ba4d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
 <img  className='w-[200px] h-[150px]' src="https://images.unsplash.com/photo-1567636788276-40a47795ba4d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
 
 <img  className='w-[200px] h-[150px]' src="https://images.unsplash.com/photo-1569316650693-a4531c5392be?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
@@ -62,6 +69,20 @@ const Contactus = () => {
 <img  className='w-[200px] h-[150px]' src="https://images.unsplash.com/photo-1596178067639-5c6e68aea6dc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
     </div>
    </Marquee>
+
+   <div>
+   {/* <MapContainer center={[51.505, -0.09]} zoom={13} style={{ height: "400px", width: "100%" }}>
+      <TileLayer
+        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+      />
+      <Marker position={[51.505, -0.09]}>
+        <Popup>
+          A pretty CSS3 popup. <br /> Easily customizable.
+        </Popup>
+      </Marker>
+    </MapContainer> */}
+   </div>
+   <Leflet center={center} zoom={zoom}></Leflet>
         </div>
     );
 };
