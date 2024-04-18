@@ -94,9 +94,9 @@ const handleRegister = (e) =>{
             <input name="email" type="text" placeholder="Type here your email"
             className="input input-bordered w-full " />
         </div>
-        {/* {
+        {
             emailError && <small className='text-red-600'>{emailError}</small>
-      } */}
+      }
        
         {/* --------- */}
         <div className='mb-12 relative '>

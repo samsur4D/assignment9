@@ -13,7 +13,7 @@ const Home = () => {
     return (
         <div className='container mx-auto '>
             
-            animate__delay-2s	
+           
            
             <Slider></Slider>
               <div className='mt-10 mb-10 text-center'>

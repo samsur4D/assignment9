@@ -9,7 +9,7 @@
       "area": "5000 sq ft",
       "location": "Malibu, California",
       "facilities": ["Infinity pool", "Private beach access", "Gourmet kitchen"],
-      "image": "../src/assets/one.jpg"
+      "image": "https://images.unsplash.com/photo-1627613046044-70c7a552be66?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       "id": 2,
@@ -21,7 +21,7 @@
       "area": "3000 sq ft",
       "location": "Aspen, Colorado",
       "facilities": ["Hot tub", "Fireplace", "Hiking trails"],
-      "image": "../src/assets/two.jpg"
+      "image": "https://images.unsplash.com/photo-1593655600619-a88c11180241?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       "id": 3,
@@ -33,7 +33,7 @@
       "area": "1500 sq ft",
       "location": "New York City, New York",
       "facilities": ["Open floor plan", "Fitness center", "Roof deck"],
-      "image": "../src/assets/three.jpg"
+      "image": "https://images.unsplash.com/photo-1580846629083-02669741360a?q=80&w=2027&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       "id": 4,
@@ -45,7 +45,7 @@
       "area": "2500 sq ft",
       "location": "Napa Valley, California",
       "facilities": ["Wrap-around porch", "Vineyard views", "Barn"],
-      "image": "../src/assets/four.jpg"
+      "image": "https://images.unsplash.com/photo-1470043201067-764120126eb4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       "id": 5,
@@ -57,7 +57,7 @@
       "area": "2000 sq ft",
       "location": "Whistler, British Columbia",
       "facilities": ["Ski-in/ski-out access", "Sauna", "Game room"],
-      "image": "../src/assets/five.jpg"
+      "image": "https://images.unsplash.com/photo-1529316275402-0462fcc4abd6?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       "id": 6,
@@ -69,7 +69,7 @@
       "area": "4000 sq ft",
       "location": "Maui, Hawaii",
       "facilities": ["Private pool", "Spa", "Tennis court"],
-      "image": "../src/assets/six.jpg"
+      "image": "https://images.unsplash.com/photo-1669694575282-03ed7faf6360?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       "id": 7,
@@ -81,7 +81,7 @@
       "area": "8000 sq ft",
       "location": "Charleston, South Carolina",
       "facilities": ["Formal gardens", "Ballroom", "Library"],
-      "image": "../src/assets/seven.jpg"
+      "image": "https://images.unsplash.com/photo-1669694575282-03ed7faf6360?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       "id": 8,
@@ -93,7 +93,7 @@
       "area": "6000 sq ft",
       "location": "Bali, Indonesia",
       "facilities": ["Infinity pool", "Outdoor dining area", "Yoga pavilion"],
-      "image": "../src/assets//eight.jpg"
+      "image": "https://images.unsplash.com/photo-1440151050977-247552660a3b?q=80&w=1990&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       "id": 9,
@@ -105,7 +105,7 @@
       "area": "1000 sq ft",
       "location": "Lake Tahoe, California",
       "facilities": ["Dock", "Canoe", "Outdoor fire pit"],
-      "image": "../src/assets/nine.jpg"
+      "image": "https://images.unsplash.com/photo-1541480551145-2370a440d585?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     }
   ]
   
