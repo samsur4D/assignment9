@@ -10,6 +10,9 @@ import Home from './Components/Home.jsx';
 import Login from './Pages/Login.jsx';
 import Register from './Pages/Register.jsx';
 import AuthProvider from './Components/AuthProvider.jsx';
+import Userprofile from './Pages/Details.jsx';
+import Details from './Pages/Details.jsx';
+import Protectroute from './Components/Protectroute.jsx';
 
 const router = createBrowserRouter([
   {
@@ -27,6 +30,10 @@ const router = createBrowserRouter([
         {
           path: "/register",
           element: <Register></Register>
+        },
+        {
+          path:"/details",
+          element: <Protectroute>  <Details></Details>  </Protectroute>
         }
     ]
   },
