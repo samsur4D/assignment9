@@ -1,8 +1,14 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { AuthContext } from '../Components/AuthProvider';
 
 
 const Userpro = () => {
+	useEffect(() => {
+        document.title = 'User Profile Page';
+        return () => {
+          document.title = 'Title';
+        };
+      }, []);
 	       const {user} = useContext(AuthContext)
     return (
         <div>

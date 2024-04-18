@@ -1,13 +1,17 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
     return (
       <footer className="bg-gray-300 ">
       <div className="container flex flex-col p-4 mx-auto md:p-8 lg:flex-row dark:divide-gray-600">
         <ul className="self-center py-6 space-y-4 text-center sm:flex sm:space-y-0 sm:justify-around sm:space-x-4 lg:flex-1 lg:justify-start">
-         
-          <li className='text-2xl font-bold'>Home</li>
-          <li className='text-2xl font-bold'>Contact Us</li>
+        <div className='flex justify-around items-center '>
+           
+          <NavLink to="/" className='text-2xl mr-10 font-bold'>Home</NavLink>
+          <NavLink to="/contact" className='text-2xl mr-10 font-bold'>Contact Us</NavLink>
+          <NavLink to="/reviews" className='text-2xl font-bold'>Reviews</NavLink>
+        </div>
           
         </ul>
         <div className="flex flex-col justify-center pt-6 lg:pt-0">

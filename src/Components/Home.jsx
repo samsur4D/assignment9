@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Slider from './Slider';
 import HomeCard from './HomeCard';
 import 'animate.css';
 
 const Home = () => {
+  useEffect(() => {
+    document.title = 'Home Page';
+    return () => {
+      document.title = 'Title';
+    };
+  }, []);
     return (
         <div className='container mx-auto '>
             

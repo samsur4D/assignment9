@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Marquee from "react-fast-marquee";
 import { LuFacebook } from "react-icons/lu";
 import Leflet from '../Components/Leflet';
@@ -6,6 +6,12 @@ import Leflet from '../Components/Leflet';
 // import { TileLayer , Marker , Popup } from 'https://cdn.esm.sh/react-leaflet/TileLayer'
 
 const Contactus = () => {
+  useEffect(() => {
+    document.title = 'Contact Page';
+    return () => {
+      document.title = 'Title';
+    };
+  }, []);
   const center = [51.505, -0.09]; // Coordinates for London
   const zoom = 13;
     return (

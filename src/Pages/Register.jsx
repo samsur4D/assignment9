@@ -1,10 +1,21 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { AuthContext } from '../Components/AuthProvider';
+import { toast } from 'react-toastify';
+import { MdRemoveRedEye } from "react-icons/md";
+import { IoEyeOff } from "react-icons/io5";
+
 
 const Register = () => {
-    const {registerUser , setUser , updateUserProfile} = useContext(AuthContext)
+  useEffect(() => {
+    document.title = 'Register Page';
+    return () => {
+      document.title = 'Title';
+    };
+  }, []);
+    const {registerUser , setUser } = useContext(AuthContext)
     const [error , setError] = useState("")
     const [emailError , setEmailError] = useState("")
+    const [showPassword , setshowPassword] = useState(false)
     
 
 
@@ -14,7 +25,7 @@ const handleRegister = (e) =>{
     const photo = e.target.photo.value;
     const email = e.target.email.value;
     const password = e.target.password.value;
-    const confirmPassword = e.target.confirmPassword.value;
+    
        
     if(!/@gmail\.com$/.test(email)){
         setEmailError("At the end of the email ..it will be- gmail.com")
@@ -48,13 +59,15 @@ const handleRegister = (e) =>{
       setEmailError("")
 
     // console.log(name,photo,email, password, confirmPassword);
-    registerUser(email,password)
+    registerUser( email,password)
     .then(result => {
         setUser(result.user)
+       toast.success("Succesfully Login")
     })
+            
     .catch(error => setError(error.message.split("/")[1]))
 }
-
+                  
 
 
     return (
@@ -81,21 +94,33 @@ const handleRegister = (e) =>{
             <input name="email" type="text" placeholder="Type here your email"
             className="input input-bordered w-full " />
         </div>
-        {
+        {/* {
             emailError && <small className='text-red-600'>{emailError}</small>
-      }
+      } */}
        
         {/* --------- */}
-        <div className='mb-12'>
+        <div className='mb-12 relative '>
             <p>Password</p>
-            <input name="password" type="text" placeholder="Password"
+            <input name="password"
+             type={showPassword ? "text" : "password"}
+             placeholder="Password"
             className="input input-bordered w-full " />
+           <span className='absolute text-3xl mt-2 right-5 ' onClick={()=>setshowPassword(!showPassword)}>
+            {
+              showPassword ? <IoEyeOff></IoEyeOff> : <MdRemoveRedEye></MdRemoveRedEye>
+            }
+           </span>
         </div>
         {/* --------- */}
-        <div>
+        <div className='relative'> 
             <p>Confirm Password</p>
-            <input name="confirmPassword" type="text" placeholder="Confirm password"
+            <input name="confirmPassword" type={showPassword ? "text" : "password"} placeholder="Confirm password"
             className="input input-bordered w-full " />
+             <span className='absolute text-3xl mt-2 right-5 ' onClick={()=>setshowPassword(!showPassword)}>
+            {
+              showPassword ? <IoEyeOff></IoEyeOff> : <MdRemoveRedEye></MdRemoveRedEye>
+            }
+           </span>
         </div>
         {/* --------- */}
       {
@@ -116,6 +141,7 @@ const handleRegister = (e) =>{
 <span className="relative invisible">Register</span>
                       </button>
         </form>
+       
     </div>
     );
 };

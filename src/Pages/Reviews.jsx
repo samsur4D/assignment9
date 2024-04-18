@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Marquee from "react-fast-marquee";
 
 const Reviews = () => {
+	useEffect(() => {
+        document.title = 'reviews Page';
+        return () => {
+          document.title = 'Title';
+        };
+      }, []);
     return (
         <div>
               <div className='container mx-auto'>

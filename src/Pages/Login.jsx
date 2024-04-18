@@ -1,9 +1,15 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { AuthContext } from '../Components/AuthProvider';
 import { ImFacebook2 } from "react-icons/im";
 import { LiaFacebookF } from "react-icons/lia";
 
 const Login = () => {
+	useEffect(() => {
+        document.title = 'Login Page';
+        return () => {
+          document.title = 'Title';
+        };
+      }, []);
     const {loginUser, googleLogin,facebookLogin ,githubLogin ,user , setUser} =  useContext(AuthContext)
     const [loginemailError , setloginEmailError] = useState("")
     const [loginerror , setloginError] = useState("")
