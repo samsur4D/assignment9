@@ -24,18 +24,18 @@ const handleRegister = (e) =>{
         setError("Password Length must be at least 6 character")
         return
       }
-    if(password !== confirmPassword){
-        setError("Did Not Match Password with Confirm Password")
-        return
-      }
-      if(!/[0-9]{2,}$/.test(password)){
-        setError("Use Any two Nummber in the last part")
-        return
-      }
-      if(!/[@#%&*$]/.test(password)){
-        setError("use any significant sign")
-        return
-      }
+    // if(password !== confirmPassword){
+    //     setError("Did Not Match Password with Confirm Password")
+    //     return
+    //   }
+      // if(!/[0-9]{2,}$/.test(password)){
+      //   setError("Use Any two Nummber in the last part")
+      //   return
+      // }
+      // if(!/[@#%&*$]/.test(password)){
+      //   setError("use any significant sign")
+      //   return
+      // }
       if(!/[a-z]/.test(password)){
         setError("Must have a Lowercase letter in the password")
         return
@@ -72,7 +72,7 @@ const handleRegister = (e) =>{
         {/* --------- */}
         <div className='mb-12'>
             <p>Photo</p>
-            <input name="photo" type="text" placeholder="give your photo"
+            <input name="photo" type='url' placeholder="give your photo"
             className="input input-bordered w-full " />
         </div>
         {/* --------- */}

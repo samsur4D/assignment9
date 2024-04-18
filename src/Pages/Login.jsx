@@ -35,9 +35,9 @@ const handleFacebookLogin = () =>{
 
     return (
         <div className='mb-5'>
-              <div className="container mx-auto mb-5 mt-24 max-w-screen-md p-4 rounded-md shadow sm:p-8 dark:bg-gray-50 dark:text-gray-800">
-	<h2 className="mb-3 text-3xl font-semibold text-center">Login to your account</h2>
-	<p className="text-sm text-center dark:text-gray-600">Dont have account?
+              <div className="container mx-auto border mb-5 mt-24 max-w-screen-md p-4 rounded-md shadow sm:p-8 dark:bg-gray-50 dark:text-gray-800">
+	<h2 className="mb-3 text-4xl font-bold text-center">Login to your account</h2>
+	<p className="text-md text-center dark:text-gray-600">Dont have account?
 		<a href="#" rel="noopener noreferrer" className="focus:underline hover:underline">Sign up here</a>
 	</p>
 	<div className="my-6 mb-12 space-y-4">

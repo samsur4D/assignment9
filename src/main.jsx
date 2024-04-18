@@ -13,15 +13,22 @@ import AuthProvider from './Components/AuthProvider.jsx';
 import Userprofile from './Pages/Details.jsx';
 import Details from './Pages/Details.jsx';
 import Protectroute from './Components/Protectroute.jsx';
+import Contactus from './Pages/Contactus.jsx';
+import NotFound from './Components/NotFound.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <NotFound></NotFound>,
     children: [
         {
            path: "/",
            element: <Home></Home>
+        },
+        {
+          path: "/contact",
+          element: <Contactus></Contactus>
         },
         {
           path: "/login",
@@ -32,7 +39,7 @@ const router = createBrowserRouter([
           element: <Register></Register>
         },
         {
-          path:"/details",
+          path:"/details/:id",
           element: <Protectroute>  <Details></Details>  </Protectroute>
         }
     ]
