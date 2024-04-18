@@ -1,0 +1,111 @@
+[
+    {
+      "id": 1,
+      "estate_title": "Luxury Beachfront Villa",
+      "segment_name": "Hospitality",
+      "description": "Experience luxury living in this stunning beachfront villa. Enjoy breathtaking ocean views and unparalleled comfort.",
+      "price": "$5,000,000",
+      "status": "sale",
+      "area": "5000 sq ft",
+      "location": "Malibu, California",
+      "facilities": ["Infinity pool", "Private beach access", "Gourmet kitchen"],
+      "image": "../src/assets/one.jpg"
+    },
+    {
+      "id": 2,
+      "estate_title": "Mountain Retreat Lodge",
+      "segment_name": "Hospitality",
+      "description": "Escape to this secluded mountain lodge surrounded by serene wilderness. Perfect for nature enthusiasts and relaxation seekers.",
+      "price": "$1,200,000",
+      "status": "sale",
+      "area": "3000 sq ft",
+      "location": "Aspen, Colorado",
+      "facilities": ["Hot tub", "Fireplace", "Hiking trails"],
+      "image": "../src/assets/two.jpg"
+    },
+    {
+      "id": 3,
+      "estate_title": "Urban Loft Apartment",
+      "segment_name": "Hospitality",
+      "description": "Live in style in this modern loft apartment located in the heart of the city. Enjoy city views and convenient access to amenities.",
+      "price": "$3,500/month",
+      "status": "rent",
+      "area": "1500 sq ft",
+      "location": "New York City, New York",
+      "facilities": ["Open floor plan", "Fitness center", "Roof deck"],
+      "image": "../src/assets/three.jpg"
+    },
+    {
+      "id": 4,
+      "estate_title": "Rustic Farmhouse Retreat",
+      "segment_name": "Hospitality",
+      "description": "Experience the charm of country living in this cozy farmhouse retreat. Surrounded by rolling hills and tranquility.",
+      "price": "$800,000",
+      "status": "sale",
+      "area": "2500 sq ft",
+      "location": "Napa Valley, California",
+      "facilities": ["Wrap-around porch", "Vineyard views", "Barn"],
+      "image": "../src/assets/four.jpg"
+    },
+    {
+      "id": 5,
+      "estate_title": "Ski Chalet",
+      "segment_name": "Hospitality",
+      "description": "Hit the slopes and return to this charming ski chalet for après-ski relaxation. Enjoy cozy evenings by the fireplace.",
+      "price": "$1,800/night",
+      "status": "rent",
+      "area": "2000 sq ft",
+      "location": "Whistler, British Columbia",
+      "facilities": ["Ski-in/ski-out access", "Sauna", "Game room"],
+      "image": "../src/assets/five.jpg"
+    },
+    {
+      "id": 6,
+      "estate_title": "Luxury Resort Villa",
+      "segment_name": "Hospitality",
+      "description": "Indulge in ultimate luxury at this resort villa. Impeccable service, stunning views, and lavish amenities await.",
+      "price": "$2,500/night",
+      "status": "rent",
+      "area": "4000 sq ft",
+      "location": "Maui, Hawaii",
+      "facilities": ["Private pool", "Spa", "Tennis court"],
+      "image": "../src/assets/six.jpg"
+    },
+    {
+      "id": 7,
+      "estate_title": "Historic Mansion",
+      "segment_name": "Hospitality",
+      "description": "Step back in time and experience the grandeur of this historic mansion. Elegant architecture and timeless beauty.",
+      "price": "$7,000,000",
+      "status": "sale",
+      "area": "8000 sq ft",
+      "location": "Charleston, South Carolina",
+      "facilities": ["Formal gardens", "Ballroom", "Library"],
+      "image": "../src/assets/seven.jpg"
+    },
+    {
+      "id": 8,
+      "estate_title": "Tropical Paradise Retreat",
+      "segment_name": "Hospitality",
+      "description": "Escape to this tropical paradise retreat surrounded by lush gardens and serene beaches. Pure relaxation awaits.",
+      "price": "$3,200,000",
+      "status": "sale",
+      "area": "6000 sq ft",
+      "location": "Bali, Indonesia",
+      "facilities": ["Infinity pool", "Outdoor dining area", "Yoga pavilion"],
+      "image": "../src/assets//eight.jpg"
+    },
+    {
+      "id": 9,
+      "estate_title": "Lakefront Cabin",
+      "segment_name": "Hospitality",
+      "description": "Unwind in this cozy lakefront cabin nestled among tall pines. Perfect for a peaceful getaway.",
+      "price": "$500/night",
+      "status": "rent",
+      "area": "1000 sq ft",
+      "location": "Lake Tahoe, California",
+      "facilities": ["Dock", "Canoe", "Outdoor fire pit"],
+      "image": "../src/assets/nine.jpg"
+    }
+  ]
+  
